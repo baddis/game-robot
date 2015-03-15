@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TicTacToe {
+
+    class BadMoveException extends Exception {
+    }
     private static final int WIDTH = 3;
     private static final int HEIGHT = 3;
     private int[][] board = new int[WIDTH][HEIGHT];
@@ -18,6 +21,13 @@ public class TicTacToe {
             }
         }
         return rval;
+    }
+
+    void makeMove(int position, int side) throws BadMoveException {
+        if (0!=board[x(position)][y(position)]) {
+            throw new BadMoveException();
+        }
+        board[x(position)][y(position)] = side;
     }
 
     int x(int i) {

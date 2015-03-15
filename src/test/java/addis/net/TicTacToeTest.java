@@ -2,6 +2,7 @@ package addis.net;
 
 
 import org.junit.Test;
+import static org.junit.Assert.fail;
 
 import static org.junit.Assert.assertEquals;
 
@@ -44,6 +45,22 @@ public class TicTacToeTest {
         assertEquals(1,t.y(7));
         assertEquals(2,t.y(8));
         assertEquals(2,t.y(9));
+    }
+
+    @Test (expected=TicTacToe.BadMoveException.class)
+    public void testDoubleMoveShouldThrow() throws TicTacToe.BadMoveException {
+        TicTacToe t = new TicTacToe();
+        t.makeMove(1,1);
+        t.makeMove(1,1);
+        fail("double move should throw");
+    }
+
+    @Test
+    public void testMakeMoveDecreasesPossibleMoves() throws TicTacToe.BadMoveException {
+        TicTacToe t = new TicTacToe();
+        int initialNumberOfMoves = t.possibleMoves().size();
+        t.makeMove(1,1);
+        assertEquals(initialNumberOfMoves-1, t.possibleMoves().size());
     }
 
 }
