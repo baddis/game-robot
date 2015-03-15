@@ -1,0 +1,5 @@
+Setting up coverage:
+https://www.jetbrains.com/idea/help/configuring-code-coverage-measurement.html#cov_suites
+
+Setting up jacoco in maven, not ij integration:
+http://www.eclemma.org/jacoco/trunk/doc/index.html
