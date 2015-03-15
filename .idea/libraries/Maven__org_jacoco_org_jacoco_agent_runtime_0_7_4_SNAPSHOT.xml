@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.jacoco:org.jacoco.agent:runtime:0.7.4-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jacoco/org.jacoco.agent/0.7.4-SNAPSHOT/org.jacoco.agent-0.7.4-SNAPSHOT-runtime.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jacoco/org.jacoco.agent/0.7.4-SNAPSHOT/org.jacoco.agent-0.7.4-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jacoco/org.jacoco.agent/0.7.4-SNAPSHOT/org.jacoco.agent-0.7.4-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
